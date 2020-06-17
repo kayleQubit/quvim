@@ -1,0 +1,19 @@
+{
+  "name": "Quvim",
+  "version": "1.0",
+  "description": "Enable Vim in Qubit editor",
+  "manifest_version": 2,
+   "permissions": [
+    "activeTab"
+    ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [
+        "https://app.qubit.com/*"
+      ],
+      "js": ["injector.js"]
+    }
+  ],
+  "web_accessible_resources" : ["background.js"]
+}
