@@ -3,6 +3,9 @@
   "version": "1.0",
   "description": "Enable Vim in Qubit editor",
   "manifest_version": 2,
+  "icons": {
+    "24": "quvim.png"
+  },
    "permissions": [
     "activeTab"
     ],

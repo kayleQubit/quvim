@@ -5,4 +5,6 @@ function injectJs (link) {
   (document.head || document.body || document.documentElement).appendChild(scr)
 }
 
-injectJs(chrome.extension.getURL('background.js'))
+if (/\/experiences\//.test(window.location.href)) {
+  injectJs(window.chrome.extension.getURL('background.js'))
+}
